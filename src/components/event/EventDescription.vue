@@ -84,18 +84,18 @@ const openInNewTab = (url) => {
         <Icon :name="IconCalendar" :size="24" />
         <div class="section__item">
           <span class="text-comment-small">{{ $t("event.eventDate") }}</span>
-          <span
+          <time
             class="text-button"
             :class="description.date.status === 'blur' ? 'blur' : ''"
           >
             {{ $d(description.date.value.start, "short") }}
-          </span>
-          <span
+          </time>
+          <time
             class="text-button"
             :class="description.date.status === 'blur' ? 'blur' : ''"
           >
             {{ $d(description.date.value.end, "short") }}
-          </span>
+          </time>
         </div>
       </div>
       <div class="section location">
