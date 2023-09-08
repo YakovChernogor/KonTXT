@@ -9,7 +9,10 @@ const changeMetaTags = (route) => {
   if(route.name === "event") {
     const metaInfo = route.params.id ? Events.find((event) => event.id === route.params.id) : Events[0];
     document.title = `${metaInfo.name.value ? metaInfo.name.value + ' | ' : ''} KonTXT`;
-    document.querySelector('meta[name="og:title"]').setAttribute("content", `${metaInfo.name ? metaInfo.name + ' | ' : ''} KonTXT`);
+    document.querySelector('meta[name="og:title"]').setAttribute("content", `${metaInfo.name.value ? metaInfo.name.value + ' | ' : ''} KonTXT`);
+    document.querySelector('meta[name="og:description"]').setAttribute("content", `${metaInfo.text.value ? metaInfo.text.value : ''}`);
+    document.querySelector('meta[name="description"]').setAttribute("content", `${metaInfo.text.value ? metaInfo.text.value : ''}`);
+    document.querySelector('meta[name="og:image"]').setAttribute("content", `${getSrc(metaInfo.image.value)}`);
     return
   }
 
