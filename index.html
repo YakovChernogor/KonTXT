@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KonTXT</title>
+    <meta name="og:url" content="https://konTXT.com/">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="KonTXT">
+    <meta name="og:image" content="https://dev.codio.ru/KonTXT/images/logo.jpg">
+    <meta name="og:description" content="Тет-а-тет встречи с профессионалами каждую неделю 
+    для нетворкинга и формирования сильной репутации">
+    <meta name="profile:first_name" content="Имя" />
+    <meta name="profile:last_name" content="Фамилия" />
+    <meta name="profile:username" content="Логин" />
+    <meta name="profile:gender" content="male/female" />
+    <meta name="profile:email" content="электронный адрес" />
+    <meta name="profile:phone_number" content="номер телефона" />
+    <meta name="description" content="Тет-а-тет встречи с профессионалами каждую неделю 
+    для нетворкинга и формирования сильной репутации">
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        if(localStorage.getItem('theme') === 'dark') {
+          document.body.classList.add('dark')
+        } else {
+          document.body.classList.remove('dark')
+        }
+
+        if(localStorage.getItem('locale') === 'ru') {
+          document.documentElement.setAttribute('lang', 'ru');
+        } else {
+          document.documentElement.setAttribute('lang', 'en');
+        }
+      })
+    </script>
+    <meta name="google-site-verification" content="3gd8dvCUxCO6oAsBBDxga6gTwiUWQ5G8nVbtnSYCcLo" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

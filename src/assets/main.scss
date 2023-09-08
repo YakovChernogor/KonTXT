@@ -1,0 +1,16 @@
+@import "./null.scss";
+@import "./mixins.scss";
+@import "./color.scss";
+@import "./typography.scss";
+
+.scroll-lock {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.blur {
+  filter: blur(7px);
+  user-select: none;
+  pointer-events: none;
+}

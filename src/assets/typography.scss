@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat/Montserrat-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-SemiBold.otf");
+  font-weight: 600;
+  font-size: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: "Montserrat";
+}
+
+span,
+b {
+  font: inherit;
+}
+
+.text-username {
+  font-family: "Inter";
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-dynamic-black);
+  @include screen(767.98px) {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.text-h1 {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-dynamic-black);
+  @include screen(767.98px) {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.text-h2 {
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-dynamic-gray);
+}
+
+.text-main {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-dynamic-black);
+  line-height: 16px;
+  @include screen(767.98px) {
+    font-size: 12px;
+    line-height: auto;
+  }
+}
+
+.text-main-small {
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--color-dynamic-black);
+  @include screen(767.98px) {
+    font-size: 12px;
+  }
+}
+
+.text-comment {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-dynamic-gray);
+  @include screen(767.98px) {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.text-comment-small {
+  font-family: "Inter";
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--color-dynamic-gray);
+}
+
+.text-button {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-dynamic-black);
+  @include screen(1199.98px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @include screen(767.98px) {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+
+.text-uppart {
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-dynamic-black);
+}
+
+.text-menu-up {
+  font-family: "Inter";
+  font-size: 9px;
+  font-weight: 400;
+  color: var(--color-dynamic-gray);
+}

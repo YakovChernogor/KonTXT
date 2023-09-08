@@ -1,0 +1,17 @@
+/* Light Theme */
+:root {
+  --color-white: #ffffff;
+  --color-black: #161718;
+  --color-gray-alpha: #89898933;
+  --color-dynamic-white: #fff;
+  --color-dynamic-gray: #898989;
+  --color-dynamic-black: #161718;
+  --color-dynamic-black-alpha: #16171866;
+  .dark {
+    --color-dynamic-white: #161718;
+    --color-dynamic-black: #fff;
+    --color-dynamic-gray: #888889;
+    --color-dynamic-black-alpha: #ffffff66;
+  }
+}
+/* Dark Theme */

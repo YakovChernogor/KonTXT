@@ -1,0 +1,17 @@
+@mixin ui-mouse {
+	@media (hover: hover) and (pointer: fine) {
+		@content;
+	};
+};
+
+@mixin ui-mobile {
+	@media (hover: hover) and (pointer: fine) {
+		@content;
+	};
+};
+
+@mixin screen($size, $type: max-width) {
+	@media (#{$type}: $size) {
+		@content
+	}
+};
