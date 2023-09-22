@@ -371,7 +371,9 @@ useSchemaOrg([
               <Icon :name="IconChevron" :size="24" />
             </button>
             <swiper
-              :slides-per-view="2"
+              :slides-per-view="
+                userInfo.videoReviews.value.length < 2 ? speakers.length : 2
+              "
               :modules="modules"
               :navigation="{
                 prevEl: prevVideoReview,
@@ -379,7 +381,10 @@ useSchemaOrg([
               }"
               :breakpoints="{
                 767.98: {
-                  slidesPerView: 3,
+                  slidesPerView:
+                    userInfo.videoReviews.value.length < 3
+                      ? speakers.length
+                      : 3,
                 },
               }"
               space-between="30"

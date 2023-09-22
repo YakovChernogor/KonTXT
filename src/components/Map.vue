@@ -43,7 +43,9 @@ const language = computed(() => i18n.locale.value.replaceAll('"', ""));
     :api-key="inject('mapApiKey')"
     :center="center"
     :zoom="zoom"
+    :scrollwheel="true"
     :language="language"
+    gesture-handling="greedy"
     :style="`width: ${width}; height: ${height}`"
   >
     <Marker

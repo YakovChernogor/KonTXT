@@ -10,14 +10,14 @@ const currentName = computed(() => route.name);
 </script>
 
 <template>
-  <perfect-scrollbar>
+  <div>
     <Header />
     <div class="main-container">
       <RouterView />
     </div>
     <Aside class="aside aside--main" />
     <LocaleSwitcher class="locale" />
-  </perfect-scrollbar>
+  </div>
 </template>
 
 <style lang="scss">

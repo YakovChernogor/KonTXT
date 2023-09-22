@@ -20,7 +20,6 @@
     "vue-popperjs": "^2.3.0",
     "vue-router": "^4.2.2",
     "vue3-google-map": "^0.17.1",
-    "vue3-perfect-scrollbar": "^1.6.1",
     "vue3-popper": "^1.5.0"
   },
   "devDependencies": {
