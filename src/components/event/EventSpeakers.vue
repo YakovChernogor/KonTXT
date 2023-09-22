@@ -44,7 +44,7 @@ const nextSpeaker = ref(null);
         <Icon :name="IconChevron" :size="24" />
       </button>
       <swiper
-        :slides-per-view="2"
+        :slides-per-view="speakers.length < 2 ? speakers.length : 2"
         :modules="[Navigation]"
         :navigation="{
           prevEl: prevSpeaker,
@@ -52,7 +52,7 @@ const nextSpeaker = ref(null);
         }"
         :breakpoints="{
           767.98: {
-            slidesPerView: 3,
+            slidesPerView: speakers.length < 3 ? speakers.length : 3,
           },
         }"
         space-between="30"

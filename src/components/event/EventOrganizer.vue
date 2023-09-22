@@ -99,7 +99,7 @@ const nextOrganizer = ref(null);
           <Icon clas="organizers-button--icon" :name="IconChevron" :size="24" />
         </button>
         <swiper
-          :slides-per-view="2"
+          :slides-per-view="organizers.length < 2 ? organizers.length : 2"
           :modules="[Navigation]"
           :navigation="{
             prevEl: prevOrganizer,
@@ -107,7 +107,7 @@ const nextOrganizer = ref(null);
           }"
           :breakpoints="{
             767.98: {
-              slidesPerView: 2,
+              slidesPerView: organizers.length < 2 ? organizers.length : 2,
             },
           }"
           space-between="5"

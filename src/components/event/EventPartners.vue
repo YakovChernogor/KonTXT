@@ -43,7 +43,7 @@ const nextPartner = ref(null);
         <Icon :name="IconChevron" :size="24" />
       </button>
       <swiper
-        :slides-per-view="2"
+        :slides-per-view="partners.length < 2 ? partners.length : 2"
         :modules="[Navigation]"
         :navigation="{
           prevEl: prevPartner,
@@ -51,7 +51,7 @@ const nextPartner = ref(null);
         }"
         :breakpoints="{
           767.98: {
-            slidesPerView: 2,
+            slidesPerView: partners.length < 2 ? partners.length : 2,
           },
         }"
         space-between="5"
